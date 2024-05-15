@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+main{
+  text-align: left;
+}
+main h3{
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  
+}
+main h4{
+  font-size: 2.1rem;
+  color: black;
+  text-align: left;
+  /* border: 2px solid black; */
+  width: 100%;
+}
+main li{
+  font-size: 2rem;
+  color: white;
+  margin: 2.5rem 0;
+}
+main li span{
+  color: black;
+}
+

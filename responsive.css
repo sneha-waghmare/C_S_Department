@@ -1,0 +1,149 @@
+html{
+  --primary1: rgba(146, 192, 242, 0.894); 
+ --primary2: rgba(0,0,0,0.5);
+  --primary3:rgba(0,0,0,0.7);
+  --primary4: rgba(197, 56, 66, 0.97);
+}
+.checkbtn{
+  font-size: 4rem;
+  color: white;
+  /* border: 2px solid white; */
+  float: right;
+  height: 5rem;
+  width: 5rem;
+  /* border: 2PX solid black; */
+  line-height: 8rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  margin-top: -3rem;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/* responsive */
+@media (max-width:1500px){
+  header{
+    width: 100%;
+    overflow: hidden;
+  }
+  .main-name{
+    font-size: 4rem;
+    /* padding-left: 5rem; */
+
+  }
+}
+@media (max-width: 955px)
+{
+  .checkbtn{
+    display: block;
+  }
+  nav{
+   /* border: 2px solid black; */
+   width: 100%;
+   /* margin-left: 2rem; */
+   
+  }
+  ul{
+    border-radius: 5rem;
+    position: fixed;
+    width: 45%;
+    height: auto;
+    background: rgba(0,0,0,0.5);
+    top: 16rem;
+    left: -100%;
+    flex-direction: column;
+    text-align: center;
+    transition: all .5s;
+    /* display: flex; */
+  }
+  nav ul li{
+    /* flex-direction: column; */
+    /* display: block; */
+    margin: 3rem 0;
+    line-height: 1.8rem;
+  }
+  nav ul li a{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+    text-shadow: .5rem .5rem 2rem white;
+  }
+  #check:checked ~ ul{
+    left: 4rem;
+  }
+  main{
+    width: 90%;
+  }
+}
+
+@media(max-width: 700px){
+  /* html{
+    font-size: 50%;
+  } */
+  h1{
+    display: none;
+  }
+  h2{
+    display: none;
+  }
+  
+  .checkbtn{
+    display: block;
+  }
+  nav{
+   /* border: 2px solid black; */
+   width: 100%;
+   /* margin-left: 2rem; */
+   position: absolute;
+   right: 0rem;
+   
+  }
+  ul{
+    border-radius: 5rem;
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    top: 12rem;
+    left: -100%;
+    flex-direction: column;
+    text-align: center;
+    transition: all .5s;
+    /* display: flex; */
+  }
+  nav ul li{
+    /* flex-direction: column; */
+    /* display: block; */
+    margin: 3rem 0;
+    line-height: 1.8rem;
+  }
+  nav ul li a{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+    text-shadow: 5px 5px 20px white;
+  }
+  #check:checked ~ ul{
+    left: 4rem;
+    top: 8rem;
+  }
+  main{
+    width: 100%;
+    padding: 1rem;
+    /* padding: 0 2rem; */
+    /* margin: 1rem 0; */
+  }
+  
+  .headline img{
+    height: 5rem;
+    width: 5rem;
+  }
+}

@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+.container{
+  display: flex;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+  border-bottom:.2rem solid black;
+}
+.container img{
+  height: 90%;
+  border-radius: 30%;
+  border: .2rem solid black;
+  margin-top: 1rem;
+}
+.container .box span{
+  color: black;
+}
+.span-main{
+  font-size: 2.3rem;
+}
+h3{
+  color: white;
+  font-size: 3rem;
+  margin-top: 2.5rem;
+}
+
